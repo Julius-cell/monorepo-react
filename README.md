@@ -17,6 +17,8 @@ VITE_CONTENTFUL_ENV=
 VITE_CONTENTFUL_SPACE_ID=
 VITE_CONTENTFUL_DELIVERY_TOKEN=
 ```
+5. Clone the repo and in the root folder run  `pnpm install`
+5. And to run the app locally run `npm run dev`
 ### Storybook
 
 - If you want to develop your components in isolation, take the Button.stories.ts file as an example.
