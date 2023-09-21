@@ -16,6 +16,11 @@ export default defineConfig(() => ({
   build: {
     rollupOptions: {
       external: ['react'],
+      output: {
+        globals: {
+          react: 'React',
+        },
+      },
     },
     lib: {
       entry: resolve('src', 'main.tsx'),
