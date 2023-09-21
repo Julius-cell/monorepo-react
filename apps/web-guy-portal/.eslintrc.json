@@ -42,6 +42,7 @@
     "object-shorthand": "error",
     "no-console": "warn",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-uses-react": "off"
+    "react/jsx-uses-react": "off",
+    "@typescript-eslint/no-redundant-type-constituents": "warn"
   }
 }
