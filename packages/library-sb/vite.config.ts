@@ -14,6 +14,9 @@ export default defineConfig(() => ({
     }),
   ],
   build: {
+    rollupOptions: {
+      external: ['react'],
+    },
     lib: {
       entry: resolve('src', 'main.tsx'),
       name: 'library-sb',
