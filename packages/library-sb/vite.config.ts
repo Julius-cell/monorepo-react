@@ -7,8 +7,8 @@ import * as packageJson from './package.json';
 
 export default defineConfig(() => ({
   plugins: [
-    react(),
     tsConfigPaths(),
+    react(),
     dts({
       include: ['src'],
     }),

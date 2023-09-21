@@ -8,17 +8,20 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 ## How to use it?
 
-1. Create an account in [Contentful](https://www.contentful.com/) 
+1. Create an account in [Contentful](https://www.contentful.com/)
 2. Go to Setting > API Keys and create one
 3. Create an .env file in the root of your app `./app/<APP_PORTAL_NAME>/`
 4. Add these three variables from your Contentful APY Keys:
+
 ```
 VITE_CONTENTFUL_ENV=
 VITE_CONTENTFUL_SPACE_ID=
 VITE_CONTENTFUL_DELIVERY_TOKEN=
 ```
-5. Clone the repo and in the root folder run  `pnpm install`
-5. And to run the app locally run `npm run dev`
+
+5. Clone the repo and in the root folder run `pnpm install`
+6. And to run the app locally run `npm run dev`
+
 ### Storybook
 
 - If you want to develop your components in isolation, take the Button.stories.ts file as an example.
@@ -39,6 +42,7 @@ VITE_CONTENTFUL_DELIVERY_TOKEN=
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 ## Commands
+
 ### Install packages
 
 From root directory
