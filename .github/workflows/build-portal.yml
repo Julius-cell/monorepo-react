@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is releasing a new versión 🚀
 
 on:
   push:
-    branches: ['main', begining]
+    branches: ['main']
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
