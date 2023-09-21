@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { LanguageContext } from '../../main';
+import { LanguageContext } from '../../utils/LanguageContext';
 import { transformDate } from '../../utils/transform-date';
 import { CollapsibleContainer } from '../ml-collapsible-container/Collapsible-container';
 import type { WorkSectionProps, WorkField } from '../../types/components-type-props';

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { LanguageContext } from '../../main';
+import { LanguageContext } from '../../utils/LanguageContext';
 import { Button } from '../at-button/Button';
 import { Image } from '../at-image/Image';
 import { RichText } from '../at-richtext/RichText';

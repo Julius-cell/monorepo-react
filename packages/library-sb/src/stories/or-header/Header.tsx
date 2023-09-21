@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { LanguageContext } from '../../main';
+import { LanguageContext } from '../../utils/LanguageContext';
 import { Image } from '../at-image/Image';
 import { LinkAnchor } from '../at-link/Link';
 
