@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { LanguageContext } from '../../utils/LanguageContext';
 import { Image } from '../at-image/Image';
 import { LinkAnchor } from '../at-link/Link';
-import type { NavBarProps } from '../../main';
+import type { NavBarProps } from '../../types/components-type-props';
 
 export const NavBar = ({ categories, languajes }: NavBarProps) => {
   const { setLanguage } = useContext(LanguageContext);

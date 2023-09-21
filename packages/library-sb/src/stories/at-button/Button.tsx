@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LanguageContext } from '../../main';
+import { LanguageContext } from '../../utils/LanguageContext';
 import type { ButtonProps } from '../../types/components-type-props';
 
 export const Button = ({

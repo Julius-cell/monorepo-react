@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import type { Dispatch, SetStateAction } from 'react';
+import { useState, createContext } from 'react';
+import type { Dispatch, ReactNode, SetStateAction } from 'react';
 
 interface LanguageProps {
-  children: React.ReactNode;
+  children: ReactNode;
   className: string;
 }
 
@@ -11,7 +11,7 @@ interface LanguageContextProps {
   setLanguage?: Dispatch<SetStateAction<string>>;
 }
 
-const LanguageContext = React.createContext<LanguageContextProps>({});
+const LanguageContext = createContext<LanguageContextProps>({});
 
 function LanguageProvider({ children, className }: LanguageProps) {
   const [language, setLanguage] = useState(() => localStorage.getItem('language') || 'ENG');

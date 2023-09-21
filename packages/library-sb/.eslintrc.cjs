@@ -1,9 +1,10 @@
-{
-  "env": {
-    "browser": true,
-    "es2021": true
+module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    es2021: true
   },
-  "extends": [
+  extends: [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
@@ -12,24 +13,23 @@
     "eslint-config-prettier",
     "plugin:storybook/recommended"
   ],
-  "overrides": [],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaFeatures: {
       "jsx": true
     },
-    "ecmaVersion": "latest",
-    "sourceType": "module",
-    "project": true,
-    "tsconfigRootDir": "."
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: true,
+    tsconfigRootDir: "."
   },
-  "plugins": ["react", "@typescript-eslint", "import", "autofix"],
-  "ignorePatterns": ["vite.config.ts"],
-  "rules": {
+  plugins: ["react", "@typescript-eslint", "import", "autofix"],
+  rules: {
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/consistent-type-imports": "warn",
     "react/react-in-jsx-scope": "off",
     "no-console": ["error", { "allow": ["warn", "error"] }],
+    "@typescript-eslint/no-explicit-any": "warn",
     "react/self-closing-comp": [
       "error",
       {
@@ -55,8 +55,7 @@
     ],
     "@typescript-eslint/no-unsafe-member-access": "warn"
   },
-  "root": true,
-  "settings": {
+  settings: {
     "react": {
       "version": "detect"
     }
