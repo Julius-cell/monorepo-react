@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "main": "src/index.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "storybook build",
     "lint": "eslint . --fix",
