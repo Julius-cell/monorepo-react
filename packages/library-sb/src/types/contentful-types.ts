@@ -1,3 +1,4 @@
+// Use these types as a reference to create you Content Model y Contenful, but you can change them as you want
 export interface ContentfulAsset extends ContentfulContent {
   description?: string;
   file?: {
