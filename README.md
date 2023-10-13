@@ -1,6 +1,10 @@
-# The Web Guy
+# Monorepo Template
 
-This is the official library and portal for my ultimate portfolio.
+This is the official monorepo for your library and app.
+
+## Requirements
+
+- Have pnpm installed, [here](https://pnpm.io/installation) you can see how to install.
 
 ## What's inside?
 
@@ -8,21 +12,32 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 ## How to use it?
 
-1. Create an account in [Contentful](https://www.contentful.com/)
-2. Go to Setting > API Keys and create one
-3. Create an .env file in the root of your app `./app/<APP_PORTAL_NAME>/`
-4. Add these three variables from your Contentful APY Keys:
+1. Clone the repo in your local
+2. Create an account in [Contentful](https://www.contentful.com/)
+3. Go to Setting > Add API Keys and create one
+4. Create an .env file in the root of your app `./app/<APP_PORTAL_NAME>/`
+5. Add these three variables from your Contentful APY Keys in your .env file:
 
 ```
-VITE_CONTENTFUL_ENV=
-VITE_CONTENTFUL_SPACE_ID=
-VITE_CONTENTFUL_DELIVERY_TOKEN=
+VITE_CONTENTFUL_ENV=<environment>
+VITE_CONTENTFUL_SPACE_ID=<space_id>
+VITE_CONTENTFUL_DELIVERY_TOKEN=<contentful_delivery_token>
 ```
 
-5. Clone the repo and in the root folder run `pnpm install`
+5. In the root folder run `pnpm install`
 6. And to run the app locally run `npm run dev`
+7. Create your own components and stories having at-button as example or following [Storybook guides](https://storybook.js.org/docs/react/writing-stories/introduction)
 
-### Storybook
+## Versioning and Deployment
+
+- There is a .github folder which contain the workflow to versioning the packages. To run this succesfully you need to:
+1. Create and NPM account.
+2. Go to Access tokens and Generate New Token > Classic Token > Type 'Publish'.
+3. Copy and Paste it in your project repo as a repository secret.
+4. Run the command `npx changeset init`
+5. Push your changes into the main branch
+
+## Storybook
 
 - If you want to develop your components in isolation, take the Button.stories.ts file as an example.
 
@@ -32,12 +47,11 @@ VITE_CONTENTFUL_DELIVERY_TOKEN=
 - `npm run dev`: Runs the dev script in every package or app that you have in your monorepo.
 - `npm run lint`: Runs Eslint on all files in your project directory and its subdirectories. Also overwrite the file with the proper format (--fix flag).
 - `npm run format`: Runs Prettier on all files in your project directory and its subdirectories matching the extensions .ts, .tsx, and .md. Also overwrite the file with the proper format (--write flag).
-- `publish-packages`: TODO know how to use it properly and consistenly
 
 ## Apps and Packages
 
-- `web-guy-portal`: another [Next.js](https://nextjs.org/) app
-- `library-sb`: a stub React component library (storybook) shared by both `web-guy-portal` application
+- `my-app`: another [Next.js](https://nextjs.org/) app
+- `library-sb`: a stub React component library (storybook)
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -65,7 +79,7 @@ cd <ROOT_FOLDER_NAME> > cd packages > cd library-sb
 npm run storybook
 ```
 
-### Remote Caching
+## Remote Caching
 
 Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
 
@@ -84,7 +98,7 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 pnpm dlx turbo link
 ```
 
-### Utilities
+## Utilities
 
 This turborepo has some additional tools already setup for you:
 
