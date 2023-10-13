@@ -35,7 +35,11 @@ VITE_CONTENTFUL_DELIVERY_TOKEN=<contentful_delivery_token>
 2. Go to Access tokens and Generate New Token > Classic Token > Type 'Publish'.
 3. Copy and Paste it in your project repo as a repository secret.
 4. Run the command `npx changeset init`
-5. Push your changes into the main branch
+5. In your repo `Action premission` section > `Workflow permission` set Read and write permission and check 'Allow Github Action to create and approve PR'
+6. To deploy your Turborepo on Vercel, follow the [intructions](https://turbo.build/repo/docs/ci/vercel)
+7. Select as root directory your app directory and the framework preset should be 'Vite' in this case
+8. In Build and Output Settings override install command and set `pnpm install --no-frozen-lockfile`
+9. Push your changes into the main branch
 
 ## Storybook
 
