@@ -1,5 +1,16 @@
 # web-guy-portal
 
+## 4.0.0
+
+### Major Changes
+
+- da0e247: reducing code to create template
+
+### Patch Changes
+
+- Updated dependencies [da0e247]
+  - library-sb@2.0.0
+
 ## 3.0.1
 
 ### Patch Changes
