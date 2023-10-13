@@ -28,7 +28,8 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile=false
-        working-directory: ./apps/web-guy-portal
+        # This point to your app name directory
+        working-directory: ./apps/my-app
 
       - name: Create Release
         uses: changesets/action@v1
